@@ -5,6 +5,6 @@ export class UserController {
   constructor() {}
   @Get()
   hello(): string {
-    return 'Hello User!';
+    return 'DB URL = ' + process.env.DATABASE_URL;
   }
 }
